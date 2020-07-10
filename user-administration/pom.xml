@@ -11,7 +11,7 @@
 	<groupId>com.adventure</groupId>
 	<artifactId>user-administration</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>users</name>
+	<name>user-administration-service</name>
 	<description>Microservice for user administration</description>
 
 	<properties>
@@ -58,10 +58,28 @@
 		</dependency>
 
 		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-bean-validators</artifactId>
+			<version>2.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.4.0</version>
+		</dependency>
+
+		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>com.adventure</groupId>
+			<artifactId>user-administration-client</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
